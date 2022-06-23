@@ -33,7 +33,7 @@ ul {
     display: block;
 }
 
-.section-title{
+.activities-title{
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
@@ -47,12 +47,18 @@ ul {
     /* header */
 
 .container{
-    justify-content: space-between;
+    
     width: 1200px;
     padding: 0 15px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 1px solid #ECECEC;;
+    
+}
+
+.header.container {
+justify-content: space-between;
+border-bottom: 1px solid #ECECEC;
+    
 }
 
 .logo{
@@ -73,9 +79,9 @@ ul {
 .header-contacts-link{
     padding-top: 32px;
     padding-bottom: 32px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
-    line-height: 1.42;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--title-colour)
 }
@@ -112,32 +118,47 @@ ul {
         /* hero */
 
 .hero{
-
+    text-align: center;
+   
     background: #2F303A;
+   
+   
+    outline: 2px solid tomato;
 }
 
 .hero-title{
+    display: block;
+    width: 696px;
+    margin-bottom: 30px;
+    padding-top: 200px;
+    
+    margin-left: auto;
+    margin-right: auto; 
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     text-transform: uppercase;    
     color: var(--light-theme-logo);
 }
 
 .hero-btn{
-    background: var(--dominant-colour);
+    margin-bottom: 200px;
+  
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
     border-radius: 4px;
+   
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
     color:var(--light-theme-logo);                
-    border: none;
     padding: 10px 32px;
+    
+    background: var(--dominant-colour);
 }
 
     /* benefits */
@@ -157,7 +178,23 @@ ul {
 
     /* benefits */
 
+    .benefits-list.list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .benefits-list {
+        margin-top: 94px;
+        margin-bottom: 94px;
+    }
+
+    .benefits-item {
+        width: 270px;
+        
+    }
+
 .benefits-title{
+    margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;          
     line-height: 1.14;
@@ -167,6 +204,17 @@ ul {
 .benefits-text{
     line-height: 1.71;
     color: var(--text-colour)
+}
+
+/*activities */
+
+.activities-title {
+    margin-bottom: 50px;
+}
+
+.activities-list{
+    display: flex;
+    justify-content: space-between;
 }
 
     /* team */
