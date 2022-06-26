@@ -18,39 +18,41 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header class="header container">
-      <nav class="header-nav">
-        <!-- logo -->
-        <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
+    <header class="header">
+      <div class="header-container container">
+        <nav class="header-nav">
+          <!-- logo -->
+          <a class="logo link" href="./index.html"><span class="accent">Web</span>Studio</a>
 
-        <!-- site page navigation -->
-        <ul class="header-nav-list list">
-          <li class="header-nav-item">
-            <a class="header-nav-link link current" href="./index.html">Студия</a>
+          <!-- site page navigation -->
+          <ul class="header-nav-list list">
+            <li class="header-nav-item">
+              <a class="header-nav-link link current" href="./index.html">Студия</a>
+            </li>
+
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="./portfolio.html">Портфолио</a>
+            </li>
+
+            <li class="header-nav-item">
+              <a class="header-nav-link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- contacts navigation -->
+        <ul class="header-contacts-list list">
+          <li class="header-contacts-item">
+            <a class="header-contacts-link link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
 
-          <li class="header-nav-item">
-            <a class="header-nav-link link" href="./portfolio.html">Портфолио</a>
-          </li>
-
-          <li class="header-nav-item">
-            <a class="header-nav-link link" href="">Контакты</a>
+          <li class="header-contacts-item">
+            <a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </nav>
-
-      <!-- contacts navigation -->
-      <ul class="header-contacts-list list">
-        <li class="header-contacts-item">
-          <a class="header-contacts-link link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-
-        <li class="header-contacts-item">
-          <a class="header-contacts-link link" href="tel:+380961111111">+38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- section hero -->
@@ -65,37 +67,39 @@
 
       <!-- Benefits section -->
 
-      <section class="benefits container">
-        <h2 class="visually-hidden">наши преимущества</h2>
-        <ul class="benefits-list list">
-          <li class="benefits-item">
-            <h3 class="benefits-title">Внимание к деталям</h3>
-            <p class="benefits-text">
-              Идейные соображения, а также начало повседневной работы по формированию позиции.
-            </p>
-          </li>
+      <section class="benefits">
+        <div class="container">
+          <h2 class="visually-hidden">наши преимущества</h2>
+          <ul class="benefits-list list">
+            <li class="benefits-item">
+              <h3 class="benefits-title">Внимание к деталям</h3>
+              <p class="benefits-text">
+                Идейные соображения, а также начало повседневной работы по формированию позиции.
+              </p>
+            </li>
 
-          <li class="benefits-item">
-            <h3 class="benefits-title">Пунктуальность</h3>
-            <p class="benefits-text">
-              Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
-            </p>
-          </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Пунктуальность</h3>
+              <p class="benefits-text">
+                Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
+              </p>
+            </li>
 
-          <li class="benefits-item">
-            <h3 class="benefits-title">Планирование</h3>
-            <p class="benefits-text">
-              Равным образом консультация с широким активом в значительной степени обуславливает.
-            </p>
-          </li>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Планирование</h3>
+              <p class="benefits-text">
+                Равным образом консультация с широким активом в значительной степени обуславливает.
+              </p>
+            </li>
 
-          <li class="benefits-item">
-            <h3 class="benefits-title">Современные технологии</h3>
-            <p class="benefits-text">
-              Значимость этих проблем настолько очевидна, что реализация плановых заданий.
-            </p>
-          </li>
-        </ul>
+            <li class="benefits-item">
+              <h3 class="benefits-title">Современные технологии</h3>
+              <p class="benefits-text">
+                Значимость этих проблем настолько очевидна, что реализация плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!--activities -->
@@ -141,47 +145,35 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-list list">
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team-foto-1.jpg"
-                alt="первый участник команды"
-                width="270"
-              />
-              <h3 class="team-name">Игорь Демьяненко</h3>
-              <p class="team-position" lang="en">Product Designer</p>
+              <img src="./images/team-foto-1.jpg" alt="первый участник команды" width="270" />
+              <div class="team-thumb">
+                <h3 class="team-name">Игорь Демьяненко</h3>
+                <p class="team-position" lang="en">Product Designer</p>
+              </div>
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team-foto-2.jpg"
-                alt="второй участник команды"
-                width="270"
-              />
-              <h3 class="team-name">Ольга Репина</h3>
-              <p class="team-position" lang="en">Frontend Developer</p>
+              <img src="./images/team-foto-2.jpg" alt="второй участник команды" width="270" />
+              <div class="team-thumb">
+                <h3 class="team-name">Ольга Репина</h3>
+                <p class="team-position" lang="en">Frontend Developer</p>
+              </div>
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team-foto-3.jpg"
-                alt="третий участник команды"
-                width="270"
-              />
-              <h3 class="team-name">Николай Тарасов</h3>
-              <p class="team-position" lang="en">Marketing</p>
+              <img src="./images/team-foto-3.jpg" alt="третий участник команды" width="270" />
+              <div class="team-thumb">
+                <h3 class="team-name">Николай Тарасов</h3>
+                <p class="team-position" lang="en">Marketing</p>
+              </div>
             </li>
 
             <li class="team-item">
-              <img
-                class="team-img"
-                src="./images/team-foto-4.jpg"
-                alt="четвертый участник команды"
-                width="270"
-              />
-              <h3 class="team-name">Михаил Ермаков</h3>
-              <p class="team-position" lang="en">UI Designer</p>
+              <img src="./images/team-foto-4.jpg" alt="четвертый участник команды" width="270" />
+              <div class="team-thumb">
+                <h3 class="team-name">Михаил Ермаков</h3>
+                <p class="team-position" lang="en">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
