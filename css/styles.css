@@ -8,6 +8,7 @@
   --button-filters-background: #f5f4fa;
   --portfolio-background: #e5e5e5;
 }
+/* reset */
 
 body {
   font-family: 'Roboto', 'Verdana', 'Tahoma', sans-serif;
@@ -17,15 +18,10 @@ body {
   color: var(--title-colour);
 }
 
-/* reset */
-
-html {
-  box-sizing: border-box;
-}
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 p,
@@ -43,13 +39,12 @@ ul {
   list-style: none;
 }
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* utils */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .link {
   text-decoration: none;
@@ -204,11 +199,6 @@ img {
   justify-content: space-between;
 }
 
-.benefits-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .benefits-item {
   width: 270px;
 }
@@ -230,7 +220,7 @@ img {
 /*activities */
 
 .activities {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 .activities-title {
@@ -253,10 +243,8 @@ img {
 
 .team-title {
   display: block;
-  padding-top: 94px;
   text-align: center;
   margin-bottom: 50px;
-
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -264,7 +252,6 @@ img {
 
 .team-list {
   display: flex;
-  padding-bottom: 94px;
   justify-content: space-between;
 }
 
@@ -303,10 +290,6 @@ img {
   background-color: #2f303a;
 }
 
-.container-secondary {
-  width: 231px;
-}
-
 .footer .logo {
   margin-bottom: 20px;
   color: var(--light-theme-logo);
@@ -316,9 +299,11 @@ img {
   font-style: normal;
   line-height: 1.5;
 }
+.address-list :not(:last-child) {
+  margin-bottom: 9px;
+}
 
 .adress-link {
-  margin-bottom: 4px;
   color: var(--light-theme-logo);
 }
 
@@ -326,16 +311,6 @@ img {
   font-weight: 400;
 
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-contacts-link.mail {
-  padding-top: 5px;
-  padding-bottom: 4px;
-}
-
-.footer-contacts-link.phone {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .footer-contacts-link:hover,
@@ -346,17 +321,14 @@ img {
 
 /* portfolio */
 
-.works {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .filter-list {
   display: flex;
-  padding-bottom: 50px;
-  width: 611px;
-  margin: 0 auto;
-  justify-content: space-between;
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filters-btn {
