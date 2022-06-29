@@ -17,7 +17,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--title-colour);
 }
-
+/* это reset или utils? */
 img {
   display: block;
   max-width: 100%;
